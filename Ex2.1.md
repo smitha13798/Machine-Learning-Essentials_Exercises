@@ -8,7 +8,7 @@ We are tasked with designing a neural network to classify a dataset with three c
 
 #### Logical OR
 - **Activation Function:** Heaviside step function.
-- **Weights:** Each input \( z_j \) has a weight of 1.
+- **Weights:** Each input $ z_j $ has a weight of 1.
 - **Bias:** 0.
 - **Function:** \( f(z) = 1 \) if any \( z_j = 1 \); otherwise, \( f(z) = 0 \).
 
