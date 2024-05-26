@@ -10,24 +10,24 @@ We are tasked with designing a neural network to classify a dataset with three c
 - **Activation Function:** Heaviside step function.
 - **Weights:** Each input $z_j$ has a weight of 1.
 - **Bias:** 0.
-- **Function:** \( f(z) = 1 \) if any \( z_j = 1 \); otherwise, \( f(z) = 0 \).
+- **Function:** $f(z) = 1$ if any $z_j = 1$; otherwise, $f(z) = 0$.
 
 #### Masked Logical OR
 - **Activation Function:** Heaviside step function.
-- **Weights:** Each input \( z_j \) has a weight corresponding to \( c_j \) (1 if \( c_j = 1 \), 0 otherwise).
+- **Weights:** Each input $z_j$ has a weight corresponding to $c_j$ (1 if $c_j = 1$, 0 otherwise).
 - **Bias:** 0.
-- **Function:** \( g(z; c) = 1 \) if any \( z_j = 1 \) for which \( c_j = 1 \); otherwise, \( g(z; c) = 0 \).
+- **Function:** $g(z; c) = 1$ if any $z_j = 1$ for which $c_j = 1$; otherwise, $g(z; c) = 0$.
 
 #### Perfect Match
 - **Activation Function:** Heaviside step function.
-- **Weights:** Each input \( z_j \) has a weight that is high if \( c_j = 1 \) and very negative otherwise.
+- **Weights:** Each input $z_j$ has a weight that is high if $c_j = 1$ and very negative otherwise.
 - **Bias:** -Sum of weights + 1.
-- **Function:** \( h(z; c) = 1 \) if \( z = c \); otherwise, \( h(z; c) = 0 \).
+- **Function:** $h(z; c) = 1$ if $z = c$; otherwise, $h(z; c) = 0$.
 
 ### Part 2: Three-Layer Network Design
 
 #### First Layer
-- **Objective:** Map each input vector \( X_i \) onto one corner of a hypercube {0, 1}^M, ensuring all points in one corner belong to the same class.
+- **Objective:** Map each input vector $X_i$ onto one corner of a hypercube {0, 1}^M, ensuring all points in one corner belong to the same class.
 - **Approach:** Use decision boundaries determined by the single neurons constructed in Part 1. Each decision boundary segregates the inputs based on their classes.
 - **Hypercube Mapping:** Assign each class a unique combination of the outputs from the first layer neurons.
 
