@@ -44,3 +44,4 @@ We are tasked with designing a neural network to classify a dataset with three c
 - **Feasibility:** As the number of dimensions increases, the network would need exponentially more neurons and layers to maintain zero training error, which may not be computationally feasible.
 - **Adaptability:** The network’s design needs to adapt based on the dataset's characteristics, such as the number of classes and the distribution of data points.
 
+<div style="text-align:center"><img src="images/Ex2.1.png" /></div>
